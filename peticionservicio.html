@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Ajustes básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petición de servicios</title>
+</head>
+
+<body>
+
+    <!-- Título principal -->
+    <header>
+        <h1>Petición de servicios</h1>
+    </header>
+
+    <!-- Texto introductorio -->
+    <p>
+        ¡Hola! Cuéntame un poco sobre tu proyecto, me encantaría conocer tu idea.
+    </p>
+
+    <!-- Formulario -->
+    <form action="https://getform.io/f/bvrzyvmb" method="post">
+
+        <!-- Datos de contacto -->
+        <fieldset>
+            <legend>Tu info de contacto</legend>
+
+            <!-- Nombre -->
+            <label for="nombre">¿Cómo te llamas? *</label><br>
+            <input type="text" name="nombre" id="nombre" required><br><br>
+
+            <!-- Empresa -->
+            <label for="empresa">¿Tienes empresa?</label><br>
+            <input type="text" name="empresa" id="empresa"><br><br>
+
+            <!-- Email -->
+            <label for="email">Correo electrónico *</label><br>
+            <input type="email" name="email" id="email" placeholder="hola@dominio.com" required><br><br>
+
+            <!-- Teléfono -->
+            <label for="telefono">Teléfono</label><br>
+            <input type="tel" name="telefono" id="telefono"><br><br>
+
+            <!-- Ubicación -->
+            <label for="ubicacion">País / Ciudad</label><br>
+            <input type="text" name="ubicacion" id="ubicacion">
+        </fieldset>
+
+        <br>
+
+        <!-- Información del proyecto -->
+        <fieldset>
+            <legend>Sobre tu proyecto</legend>
+
+            <!-- Nombre del proyecto -->
+            <label for="nombre_proyecto">Nombre del proyecto</label><br>
+            <input type="text" name="nombre_proyecto" id="nombre_proyecto"><br><br>
+
+            <!-- Tipo de proyecto -->
+            <label for="tipo_proyecto">Tipo de proyecto *</label><br>
+            <select name="tipo_proyecto" id="tipo_proyecto" required>
+                <option value="">Elige una opción</option>
+                <option value="web_corporativa">Web corporativa</option>
+                <option value="tienda_online">Tienda online</option>
+                <option value="landing_page">Landing page</option>
+                <option value="blog">Blog</option>
+                <option value="aplicacion_web">Aplicación web</option>
+                <option value="rediseño">Rediseño</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <!-- Descripción -->
+            <label for="descripcion">Descripción *</label><br>
+            <textarea name="descripcion" id="descripcion" rows="5" required></textarea><br><br>
+
+            <!-- Objetivo -->
+            <label for="objetivo">Objetivo principal</label><br>
+            <select name="objetivo" id="objetivo">
+                <option value="vender">Vender</option>
+                <option value="leads">Conseguir clientes</option>
+                <option value="informar">Informar</option>
+                <option value="marca">Marca</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <!-- Público objetivo -->
+        <fieldset>
+            <legend>Público objetivo</legend>
+
+            <!-- Edad -->
+            <label for="rango_edad">Edad</label><br>
+            <select name="rango_edad" id="rango_edad">
+                <option value="">Selecciona</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46-60">46-60</option>
+                <option value="60+">60+</option>
+            </select><br><br>
+
+            <!-- Género -->
+            <label for="genero">Género</label><br>
+            <select name="genero" id="genero">
+                <option value="">Selecciona</option>
+                <option value="todos">Todos</option>
+                <option value="hombres">Hombres</option>
+                <option value="mujeres">Mujeres</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <!-- Idiomas -->
+            <label for="idiomas">Idiomas</label><br>
+            <input type="text" name="idiomas" id="idiomas"><br><br>
+
+            <!-- Multidioma -->
+            <label>¿Multidioma?</label><br>
+            <input type="radio" name="multidioma" value="si"> Sí
+            <input type="radio" name="multidioma" value="no"> No
+        </fieldset>
+
+        <br>
+
+        <!-- Funcionalidades -->
+        <fieldset>
+            <legend>Funcionalidades</legend>
+
+            <input type="checkbox" name="funcionalidades[]" value="formulario"> Formulario<br>
+            <input type="checkbox" name="funcionalidades[]" value="login"> Login<br>
+            <input type="checkbox" name="funcionalidades[]" value="tienda"> Tienda online<br>
+            <input type="checkbox" name="funcionalidades[]" value="pagos"> Pagos<br>
+            <input type="checkbox" name="funcionalidades[]" value="blog"> Blog<br>
+            <input type="checkbox" name="funcionalidades[]" value="seo"> SEO<br><br>
+
+            <!-- Extras -->
+            <label for="otras_funcionalidades">Otras</label><br>
+            <textarea name="otras_funcionalidades" id="otras_funcionalidades" rows="3"></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Diseño -->
+         <fieldset> <legend>Diseño y estilo</legend> 
+            <label>¿Tienes identidad visual?</label><br> 
+            <input type="checkbox" name="branding" id="branding_logo" value="logo"> 
+            <label for="branding_logo">Logo</label> <br> 
+            <input type="checkbox" name="branding" id="branding_tipografia" value="tipografia"> 
+            <label for="branding_tipografia">Tipografía</label><br>
+            <input type="checkbox" name="branding" id="branding_nada" value="nada"> 
+            <label for="branding_nada">Nada</label><br><br> 
+            <label>¡Señala tus colores corporativos!</label><br><br> 
+            <input type="color" name="branding" id="branding_colores" value="colores"> 
+            <label for="branding_colores"></label> <br> <br> 
+            <label for="referencias">Webs que te inspiran</label><br> 
+            <textarea name="referencias" id="referencias" rows="3" cols="40">
+
+            </textarea><br><br> 
+            <label for="tipo_diseno">Tipo de diseño que prefieres</label><br> 
+            <select name="tipo_diseno" id="tipo_diseno"> 
+                <option value="plantilla">Plantilla</option> 
+                <option value="personalizado">Diseño personalizado</option> 
+            </select> 
+        </fieldset> 
+  
+        <br>
+
+        <!-- Hosting y dominio -->
+        <fieldset>
+            <legend>Hosting y dominio</legend>
+
+            <label for="hosting">¿Hosting?</label><br>
+            <select name="hosting" id="hosting">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+                <option value="ns">No lo sé</option>
+            </select><br><br>
+
+            <label for="nombre_dominio">Dominio</label><br>
+            <input type="text" name="nombre_dominio" id="nombre_dominio">
+        </fieldset>
+
+        <br>
+
+        <!-- Presupuesto -->
+        <fieldset>
+    <legend>Plazos y presupuesto</legend>
+
+    <label for="fecha">Fecha</label><br>
+    <input type="date" name="fecha" id="fecha"><br><br>
+
+    <label for="presupuesto">Presupuesto aproximado</label><br>
+    <select name="presupuesto" id="presupuesto">
+        <option value="bajo">Menos de 1000€</option>
+        <option value="medio">1000€ - 3000€</option>
+        <option value="alto">Más de 3000€</option>
+    </select>
+</fieldset>
+
+        <br>
+
+        <!-- Comentarios finales -->
+        <fieldset>
+            <legend>Notas</legend>
+
+            <textarea name="comentarios" rows="5"></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Política -->
+        <input type="checkbox" required> Acepto la política de privacidad *
+
+        <br><br>
+
+        <!-- Enviar -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
